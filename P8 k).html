@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onsubmit Event Demo</title>
+    <script>
+        function Myfunction()
+        {
+            fname=document.forms[0].fname.value;
+            alert("Hello "+ fname + "! You will now be redirected to My Page");
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="confirmInput()" action="https://google.com/">
+    Enter your name:<input id="fname" type="text" size="20">
+    <input type="submit">
+</form>
+</body>
+</html>

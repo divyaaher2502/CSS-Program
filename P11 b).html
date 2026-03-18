@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to open a new window and close the window after three seconds(3000 milliseconds)</p>
+    <button onclick="openWin()">Open"myWindow"</button>
+    <script>
+        function openWin()
+        {
+var myWindow=window.open("","myWindow","width=200,height=100");
+myWindow.document.write("<p>This is 'myWindow'</p>");
+setTimeout(function(){myWindow.close()},30000);
+        }
+    </script>
+</body>
+</html>

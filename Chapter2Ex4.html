@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Demo</title>
+</head>
+<body>
+    <script>
+        a=new Array();
+        a[0]=10;
+        a[1]=20;
+        a[2]=30;
+        a[3]=40;
+        a[4]=50;
+        document.write("The elements in the array are...<br/>");
+        for(i=0;i<a.length;i++)
+        {
+            document.write(a[i]+"<br>");
+
+        }
+        document.write("<br/>The element is added in the array...<br/>");
+        a[a.length]=60;
+        for(i=0;i<a.length;i++)
+        {
+            document.write(a[i]+"<br>");
+        }
+    </script>
+</body>
+</html>

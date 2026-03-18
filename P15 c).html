@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var scrollPos=0
+        var maxScroll=100
+        var blanks=""
+        function scrollText(text,milliseconds)
+        {
+        window.setInterval("displayText('"+text+"')",milliseconds)
+        }
+
+            function displayText(text)
+            {
+            window.defaultStatus=blanks + text
+            ++scrollPos 
+            blanks +=""
+            if(scrollPos>maxScroll)
+            {
+                scrollPos=0
+                blanks=""
+            }
+        }
+    </script>
+</head>
+<body onload="scrollText('Watch this text scroll!!!',300)">
+    <p>Watch the text scroll at the bottom of this window!</p>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        MyBanners=new Array('banner11.png','banner22.png','banner33.png','banner44.png');
+        MyBannerLinks=new Array('http://www.youtube.com/','http://www.facebook.com/','http://www.linkedin.com/','http://www.twitter.com/');
+        banner=0;
+        function ShowLinks()
+        {
+            document.location.href="http://www."+MyBannerLinks[bannre]
+        }
+        function ShowBanners()
+        {
+            if(document.images)
+            {
+                banner++;
+                if(banner==MyBanners.length)
+                {
+                    banner=0
+                
+                }
+                document.ChangeBanner.src=MyBanners[banner]
+                setTimeout("ShowBanners()",5000);
+            }
+        }
+    </script>
+</head>
+<body onload="ShowBanners()">
+    <center>
+        <a href="javascript:ShowLinks()">
+        <img src="banner11.jpg" width="900" height="200" name="ChangeBanner"/>
+         </a>
+    </center>
+    
+</body>
+</html>

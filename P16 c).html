@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        MySlides=new Array('banner1.jpg','banner2.png','banner3.jpg','banner4.png');
+        Slide=0;
+        function ShowSlides(SlideNumber)
+        {
+            {Slide=Slide+SlideNumber
+            if(Slide>MySlides.length-1)
+            {
+                Slide=0;
+            }    
+                if(Slide<0)
+                {
+                  Slide=MySlides.length-1;
+                
+                }
+                document.DisplaySlide.src=MySlides[Slide]
+                
+            }
+        }
+    </script>
+</head>
+<body>
+
+<p align=center><img src="banner1.jpg" name="DisplaySlide" width="500" heigth="120"/></p>
+<table border="0">
+    <tr>
+        <td align=center>
+         <input type="button" value="Back" onclick="ShowSlides(-1)">
+         <input type="button" value="Forward" onclick="ShowSlides(1)">   
+
+        </td>
+    </tr>
+</table>
+</center>
+</body>
+</html>

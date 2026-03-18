@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event Demo</title>
+    <script>
+        function Myfunction(elmnt,clr)
+        {
+            elmnt.style.color=clr;
+        }
+    </script>
+</head>
+<body>
+    <p onmousedown="Myfunction(this,'red')" onmouseup="Myfunction(this,'green')">hi how r u?</p>
+</body>
+</html>

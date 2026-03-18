@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloabal Scope Demo</title>
+    <script>
+        var a=100;
+        function A()
+        {
+            document.getElementById("id1").innerHTML="A()="+a;  
+        } 
+        function B()
+        {
+            document.getElementById("id2").innerHTML="B()="+a;  
+        } 
+
+    </script>
+</head>
+<body>
+    <p id="id1"></p>
+        <p id="id2"></p>
+    <script>
+    A();
+    B();
+    </script>
+</body>
+</html>

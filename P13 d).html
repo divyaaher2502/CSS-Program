@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<script>
+    MyBooks=new Array('Flower.jpg','Krishna.jpg','Ganesh.png');
+    book=0;
+    function ShowCover(book){document.DisplayBook.src=MyBooks[book]}
+
+</script>
+</head>
+<body>
+   <p align="center"><img src="Flower.jpg" name="DisplayBook"/></p>
+   <center>
+    <table border=0></table>
+   <tr>
+    <td align=center><a onmouseover="ShowCover(0)"><b>Visual Basic 2010 Made Easy</b></a></td> <br>
+    <a onmouseover="ShowCover(1)"><b>Visual Basic 2008 Made Easy</b></a><br>
+    <a onmouseover="ShowCover(2)"><b>Visual Basic 6 Made Easy</b></a><br>
+</td>
+   </tr> 
+</body>
+</html>
